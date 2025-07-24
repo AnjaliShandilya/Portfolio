@@ -3,10 +3,10 @@ import Section from "./othersection";
 import Nav from "./sticky";
 const Connect = () => {
   return (
-    <>
+    <div className="h-screen lg:h-auto">
     <div className="hidden md:flex md:pt-10 lg:pt-0"><Section/></div>
     <h1 className="text-center text-xl md:text-3xl text-yellow-50 font-bold md:w-11/12 w-12/12 lg:hidden  animate-slideUp p-10">Let’s Build Something Awesome – Get in Touch!</h1>
-    <section className="h-screen lg:h-auto grid grid-cols-1 lg:grid-cols-2 bg-black lg:py-12  md:px-6 px-5 lg:px-10 ">
+    <section className="h-auto lg:h-auto grid grid-cols-1 lg:grid-cols-2 bg-black lg:py-12  md:px-8 px-5 lg:px-10 md:mb-20 md:py-5">
       <div className="lg:ml-7 ml-2 mt-7  lg:pt-14 lg:order-1 order-2">
         <h1 className="text-center text-4xl text-yellow-50 font-bold w-12/12 hidden animate-slideUp lg:grid">Let’s Build Something Awesome – Get in Touch!</h1>
        <div className=" lg:grid-cols-1 w-12/12 lg:ml-7 ml-4 mt-9 lg:grid hidden  grid-cols-2">
@@ -22,11 +22,11 @@ const Connect = () => {
       <a href="https://twitter.com/anjalishandilya333/" target="_blank" ><i className="fa-brands fa-x-twitter   text-yellow-50 lg:p-4 p-2 rounded-2xl bg-gradient-to-tr from-pink-500 to-blue-500  mr-2 text-xl md:text-4xl"></i></a>    
           </div>
       </div>
-    <div className=" flex lg:order-2 order-1 justify-center lg:px-4 lg:mr-10 lg:py-10 px-3 md:px-7 w-full">
-      <div className="w-full lg:max-w-md bg-gradient-to-tr from-pink-600 to-blue-600 md:p-8 p-2 rounded-2xl mb-0 pb-0">
+    <div className=" flex lg:order-2 order-1 justify-center lg:px-4 lg:mr-10 lg:py-10 px-3 md:px-7 w-full ">
+      <div className="w-full lg:max-w-md bg-gradient-to-tr from-pink-600 to-blue-600 md:p-8 p-3 rounded-2xl mb-0 ">
         <h2 className="md:text-3xl text-xl font-bold text-center text-white md:mb-6 mb-3">Contact Me</h2>
 
-        <form action="https://api.web3forms.com/submit" method="POST" className="md:space-y-5 space-y-2">
+        <form action="https://api.web3forms.com/submit" method="POST" className="md:space-y-5 space-y-2 items-center">
         <input type="hidden" name="access_key" value="f026e5e4-08b3-43de-8bd5-ac65a05f1c98"></input>
           <input
             type="text"
@@ -59,7 +59,7 @@ const Connect = () => {
     <div className="md:flex hidden">
         <Footer/></div>
         <Nav/>
-    </>
+    </div>
   );
 };
 

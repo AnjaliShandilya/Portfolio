@@ -37,14 +37,14 @@ export const EducationTimeline = () => {
   }, []);
 
   return (
-    <div ref={ref} className="bg-black py-12 ">
-      <h2 className="text-white text-center lg:text-6xl md:text-4xl text-3xl font-bold  mb-16">Education</h2>
+    <div ref={ref} className="bg-black md:py-12 py-5">
+      <h2 className="text-white text-center lg:text-6xl md:text-4xl text-3xl font-bold  md:mb-16 mb-7">Education</h2>
 
-      <div className="relative border-l-4 md:text-xl text-lg py-4 border-purple-600 w-7/12 mx-auto pl-6">
+      <div className="relative border-l-4 md:text-xl text-lg py-4 border-purple-600 md:w-7/12  w-9/12 mx-auto pl-6">
         {educationData.map((edu, index) => (
           <div
             key={index}
-            className={`relative mb-16 transition-all duration-500 ease-out opacity-0 ${
+            className={`relative md:mb-16 mb-8 transition-all duration-500 ease-out opacity-0 ${
               visible ? "opacity-100 animate-floatUp" : ""
             }`}
             style={visible ? { animationDelay: `${index * 0.3}s` } : {}}
@@ -54,9 +54,9 @@ export const EducationTimeline = () => {
 
             {/* Content */}
             <div className="text-white ml-4">
-              <h3 className="md:text-2xl text-xl font-bold">{edu.title}</h3>
-              <p className="text-md font-semibold text-gray-300 mt-1">{edu.institute}</p>
-              <p className="text-lg text-gray-400">{edu.duration}</p>
+              <h3 className="md:text-2xl text-base font-bold">{edu.title}</h3>
+              <p className="text-sm font-semibold text-gray-300 mt-1">{edu.institute}</p>
+              <p className="text-sm text-gray-400">{edu.duration}</p>
             </div>
           </div>
         ))}
@@ -146,11 +146,11 @@ export const ExpirenceTimeline = () => {
     <div ref={ref} className="bg-black md:py-12 py-10">
       <h2 className="text-white text-center lg:text-6xl md:text-4xl font-bold   mb-5 md:mb-16 text-2xl">Expirence & Training Programs</h2>
 
-      <div className="relative border-l-4  text-lg md:text-xl py-4 border-purple-600 w-7/12 mx-auto pl-6">
+      <div className="relative border-l-4  text-lg md:text-xl md:py-4 py-2 border-purple-600 w-9/12 md:w-7/12 mx-auto pl-6">
         {expirenceData.map((exp, index) => (
           <div
             key={index}
-            className={`relative mb-16 transition-all duration-500 ease-out opacity-0 ${
+            className={`relative md:mb-16 mb-7 transition-all duration-500 ease-out opacity-0 ${
               visible ? "opacity-100 animate-floatUp" : ""
             }`}
             style={visible ? { animationDelay: `${index * 0.3}s` } : {}}
@@ -160,10 +160,10 @@ export const ExpirenceTimeline = () => {
 
             {/* Content */}
             <div className="text-white ml-4">
-              <h3 className="text-xl md:text-2xl font-bold">{exp.title}</h3>
-              <p className="text-md font-semibold text-gray-300 mt-1">{exp.institute}</p>
-              <p className="text-base font-medium text-gray-300 mt-1">{exp.decription}</p>
-              <p className="text-lg text-gray-400">{exp.duration}</p>
+              <h3 className="text-lg md:text-2xl font-bold">{exp.title}</h3>
+              <p className="text-base font-semibold text-gray-300 mt-1">{exp.institute}</p>
+              <p className="text-sm font-medium text-gray-300 mt-1">{exp.decription}</p>
+              <p className="text-base text-gray-400">{exp.duration}</p>
             </div>
           </div>
         ))}
@@ -215,16 +215,16 @@ function About(){
       <p className="text-transparent text-white font-bold md:text-3xl text-xl" >Skills! </p>
       <p  className="text-transparent bg-clip-text bg-gradient-to-bl from-blue-900 to-pink-400  lg:pb-9 md:pb-4 pb-2 font-bold lg:text-6xl md:text-4xl text-2xl">Technical Skills</p>
 
-      <div className=" grid grid-cols-7 md:pr-12 md:gap-4 md:grid-cols-9 gap-2 text-xl text-white w-11/12">
-        <div className=" text-center md:text-xs text-[6px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-3"  src="/react.png" alt="lang"></img></div>React</div>
-        <div className="  text-center md:text-xs text-[6px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-3" src="/js.png" alt="lang"></img></div>Javascript</div>
-        <div className="text-center md:text-xs text-[5px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-3" src="/material.png" alt="lang"></img></div>MaterialUI</div>
-        <div className="text-center md:text-xs text-[6px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-3" src="/redux.png" alt="lang"></img></div>Redux</div>
-        <div className="text-center md:text-xs text-[6px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-3" src="/tailwind.png" alt="lang"></img></div>Tailwind</div>
-        <div className="text-center md:text-xs text-[6px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-3" src="/next.png" alt="lang"></img></div>NextJs</div>
-        <div className="text-center md:text-xs text-[6px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-3" src="/sql.png" alt="lang"></img></div>MySql</div>
-        <div className="text-center md:text-xs text-[6px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-3" src="/java.png" alt="lang"></img></div>Java</div>
-        <div className="text-center md:text-xs text-[6px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-3" src="/spring.png" alt="lang"></img></div>SpringBoot</div>
+      <div className=" grid grid-cols-5 md:pr-12 md:gap-4 md:grid-cols-9 gap-2 text-xl text-white w-11/12">
+        <div className=" text-center md:text-xs text-[10px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-5"  src="/react.png" alt="lang"></img></div>React</div>
+        <div className="  text-center md:text-xs text-[10px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-5" src="/js.png" alt="lang"></img></div>Javascript</div>
+        <div className="text-center md:text-xs text-[10px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-5" src="/material.png" alt="lang"></img></div>MaterialUI</div>
+        <div className="text-center md:text-xs text-[10px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-5" src="/redux.png" alt="lang"></img></div>Redux</div>
+        <div className="text-center md:text-xs text-[10px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-5" src="/tailwind.png" alt="lang"></img></div>Tailwind</div>
+        <div className="text-center md:text-xs text-[10px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-5" src="/next.png" alt="lang"></img></div>NextJs</div>
+        <div className="text-center md:text-xs text-[10px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-5" src="/sql.png" alt="lang"></img></div>MySql</div>
+        <div className="text-center md:text-xs text-[10px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-5" src="/java.png" alt="lang"></img></div>Java</div>
+        <div className="text-center md:text-xs text-[10px]"><div className="flex justify-center"><img className="lg:h-10 md:h-7 h-5" src="/spring.png" alt="lang"></img></div>SpringBoot</div>
       </div>
 
       <h1 className=" my-5 text-xl md:text-3xl text-white font-medium">Other Skills</h1>
