@@ -61,31 +61,31 @@ export default function Home() {
         <div  className=" grid grid-cols-2 xs:grid-cols-3 md:flex lg:hidden  gap-3 my-3 w-full text-[14px] md:text-base z-10">
            <Link
             to="/home"
-             className="bg-[#0f0f0f] p-3 col-span-2 tracking-wide rounded-md  justify-start border-2 border-transparent hover:border-purple-500 active:border-purple-500"
+             className="bg-[#222222] p-3 col-span-2 tracking-wide rounded-md  justify-start border-2 border-transparent hover:border-purple-500 active:border-purple-500"
           ><div className=" relative text-left  p-12 "><div className="absolute bottom-0 right-0"> 
             <i className="fa-solid fa-house-user bottom-0 right-0 absolute text-white bg-black rounded-full p-2"></i></div><p className="text-white absolute top-0 left-0">home</p></div>
           </Link>
            <Link
             to="/about"
-              className="bg-[#0f0f0f] p-3  tracking-wide rounded-md  justify-start border-2 border-transparent hover:border-purple-500 active:border-purple-500"
+              className="bg-[#222222] p-3  tracking-wide rounded-md  justify-start border-2 border-transparent hover:border-purple-500 active:border-purple-500"
           ><div className=" relative text-left  p-12 "><div className="absolute bottom-0 right-0"> 
             <i className="fa-solid fa-user bottom-0 right-0 absolute text-white bg-black rounded-full p-2"></i></div><p className="text-white absolute top-0 left-0">about me</p></div>
           </Link>
            <Link
             to="/project"
-           className="bg-[#0f0f0f] p-3  tracking-wide rounded-md  justify-start border-2 border-transparent hover:border-purple-500 active:border-purple-500"
+           className="bg-[#222222] p-3  tracking-wide rounded-md  justify-start border-2 border-transparent hover:border-purple-500 active:border-purple-500"
           ><div className=" relative text-left p-12 "><div className="absolute bottom-0 right-0"> 
             <i className="fa-solid fa-list-check bottom-0 right-0 absolute text-white bg-black rounded-full p-2"></i></div><p className="text-white absolute top-0 left-0">projects</p></div>
           </Link>
            <Link
             to="/acheive"
-              className="bg-[#0f0f0f] p-3  tracking-wide rounded-md  justify-start border-2 border-transparent hover:border-purple-500 active:border-purple-500"
+              className="bg-[#222222] p-3  tracking-wide rounded-md  justify-start border-2 border-transparent hover:border-purple-500 active:border-purple-500"
           ><div className=" relative text-left p-12 "><div className="absolute bottom-0 right-0"> 
             <i className="fa-solid fa-trophy bottom-0 right-0 absolute text-white bg-black rounded-full p-2"></i></div><p className="text-white absolute top-0 left-0">Achievements</p></div>
           </Link>
           <Link
             to="/connect"
-             className="bg-[#0f0f0f] p-3  tracking-wide rounded-md  justify-start border-2 border-transparent hover:border-purple-500 active:border-purple-500"
+             className="bg-[#222222] p-3  tracking-wide rounded-md  justify-start border-2 border-transparent hover:border-purple-500 active:border-purple-500"
           ><div className=" relative text-left  p-12 "><div className="absolute bottom-0 right-0"> 
             <i className="fa-solid fa-address-book bottom-0 right-0 absolute text-white bg-black rounded-full p-2"></i></div><p className="text-white absolute top-0 left-0">contact</p></div>
           </Link>
